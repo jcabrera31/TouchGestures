@@ -36,6 +36,12 @@ public class MainActivity extends AppCompatActivity
         gesturesScrollView = (ScrollView) findViewById(R.id.gesturesScrollView);
         gesturesLogTextView = (TextView) findViewById(R.id.gesturesLogTextView);
 
+        singleTapTextView = (TextView) findViewById(R.id.tvSingleTap);
+        doubleTapTextView = (TextView) findViewById(R.id.tvDoubleTap);
+        longPressTextView = (TextView) findViewById(R.id.tvLongPress);
+        scrollTextView = (TextView) findViewById(R.id.tvScrolls);
+        flingTextView = (TextView) findViewById(R.id.tvFlings);
+
         // Hooking up the gesture detector to our scroll view
         //scrollview is the context, the listener is the main activity
         // 4 out of 5 gestures handled
@@ -44,11 +50,7 @@ public class MainActivity extends AppCompatActivity
         // Special case: double tap
         gestureDetector.setOnDoubleTapListener(this);
 
-        singleTapTextView = (TextView) findViewById(R.id.tvSingleTap);
-        doubleTapTextView = (TextView) findViewById(R.id.tvDoubleTap);
-        longPressTextView = (TextView) findViewById(R.id.tvLongPress);
-        scrollTextView = (TextView) findViewById(R.id.tvScrolls);
-        flingTextView = (TextView) findViewById(R.id.tvFlings);
+
 
     }
 
